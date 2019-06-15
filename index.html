@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    body{
+      margin: 0 auto;
+      text-align: center;
+      font-size: 15px;
+    }
+    #btn{
+      height: 30px;
+      width: 50px;
+      text-align: center;
+      line-height: 30px;
+      background: skyblue;
+      border-radius: 10px;
+      margin: 10px auto;
+    }
+    select{
+      font-size: 15px;
+      outline: none;
+      border: none;
+      margin-top: -2px;
+    }
+    form{
+      margin: 50px;
+      /* border-bottom: 1px solid #333; */
+      display: inline-block;
+    }
+    input{
+      padding: 5px;
+      margin: 5px;
+      border-radius: 50px;
+      border: 1px solid #aaa;
+      outline: none;
+    }
+    .tt{
+      float: left;
+    }
+    .textss{
+      margin: 0 auto;
+      height: 15px;
+      width: 500px;
+      padding: 10px;
+      line-height: 15px;
+      border: 1px solid gray;
+      border-radius: 10px;
+    }
+    </style>
+  </head>
+  <body>
+  <form name="f1" action="index.html" method="post">
+    1.<input id="s11" type="text" name="s11" value=""><br>
+    2.<input id="s12" type="text" name="s12" value=""><br>
+    3.<input id="s13" type="text" name="s13" value=""><br>
+    4.<input id="s14" type="text" name="s14" value=""><br>
+    5.<input id="s15" type="text" name="s15" value=""><br>
+    6.<input id="s16" type="text" name="s16" value=""><br>
+  </form>
+
+  <form name="f2" action="index.html" method="post">
+    1.<input id="s21" type="text" name="s21" value=""><br>
+    2.<input id="s22" type="text" name="s22" value=""><br>
+    3.<input id="s23" type="text" name="s23" value=""><br>
+    4.<input id="s24" type="text" name="s24" value=""><br>
+    5.<input id="s25" type="text" name="s25" value=""><br>
+    6.<input id="s26" type="text" name="s26" value=""><br>
+  </form>
+
+    <div id="btn">決定</div>
+
+  <div class="textss">
+    <div class="tt" id="text">☐☐</div>
+    <div class="tt">
+      <select class="menu1" name="">
+        <option value="が">が</option>
+        <option value="の">の</option>
+        <option value="と">と</option>
+        <option value="に">に</option>
+        <option value="を">を</option>
+        <option value="で">で</option>
+        <option value="し">し</option>
+        <option value="も">も</option>
+        <option value="より">より</option>
+        <option value="だから">だから</option>
+        <option value="だけど">だけど</option>
+        <option value="">(なし)</option>
+      </select>
+    </div>
+    <div class="tt" id="text2">☐☐</div>
+  </div>
+
+    <script type="text/javascript">
+    const text = document.getElementById('text');
+    const btn = document.getElementById('btn');
+    var num1 = Math.floor(Math.random()*6+1);
+    var num2 = Math.floor(Math.random()*6+1);
+
+      btn.addEventListener('click',function(){
+    {//f1
+        if (num1 == 1) {
+          const s11 = document.getElementById('text');
+          s11.innerText = document.forms.f1.s11.value;
+        }else if (num1 == 2) {
+          const s12 = document.getElementById('text');
+          s12.innerText = document.forms.f1.s12.value;
+        }else if (num1 == 3) {
+          const s13 = document.getElementById('text');
+          s13.innerText = document.forms.f1.s13.value;
+        }else if (num1 == 4) {
+          const s14 = document.getElementById('text');
+          s14.innerText = document.forms.f1.s14.value;
+        }else if (num1 == 5) {
+          const s15 = document.getElementById('text');
+          s15.innerText = document.forms.f1.s15.value;
+        }else if (num1 == 6) {
+          const s16 = document.getElementById('text');
+          s16.innerText = document.forms.f1.s16.value;
+        }
+      num1 = Math.floor(Math.random()*6+1);
+    }
+    {//f1
+        if (num2 == 1) {
+          const s21 = document.getElementById('text2');
+          s21.innerText = document.forms.f2.s21.value;
+        }else if (num2 == 2) {
+          const s22 = document.getElementById('text2');
+          s22.innerText = document.forms.f2.s22.value;
+        }else if (num2 == 3) {
+          const s23 = document.getElementById('text2');
+          s23.innerText = document.forms.f2.s23.value;
+        }else if (num2 == 4) {
+          const s24 = document.getElementById('text2');
+          s24.innerText = document.forms.f2.s24.value;
+        }else if (num2 == 5) {
+          const s25 = document.getElementById('text2');
+          s25.innerText = document.forms.f2.s25.value;
+        }else if (num2 == 6) {
+          const s26 = document.getElementById('text2');
+          s26.innerText = document.forms.f2.s26.value;
+        }
+      num2 = Math.floor(Math.random()*6+1);
+    }
+
+      })
+
+    </script>
+  </body>
+</html>
