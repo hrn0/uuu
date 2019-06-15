@@ -2,32 +2,51 @@
 <html lang="ja" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>ランダムで文ができるやつ</title>
     <style media="screen">
     body{
       margin: 0 auto;
       text-align: center;
       font-size: 15px;
+      background: lightcyan
     }
     #btn{
-      height: 30px;
-      width: 50px;
+      height: 50px;
+      width: 100px;
       text-align: center;
-      line-height: 30px;
-      background: skyblue;
-      border-radius: 10px;
+      line-height: 50px;
+      background: hotpink;
+      border-radius: 20px;
       margin: 10px auto;
+      color: #fff;
+      font-size: 20px;
     }
     select{
       font-size: 15px;
       outline: none;
       border: none;
       margin-top: -2px;
+      background: lightcyan
     }
     form{
       margin: 50px;
       /* border-bottom: 1px solid #333; */
       display: inline-block;
+    }
+    #f1{
+      border: 3px solid sandybrown;
+      border-radius: 20px;
+      padding: 10px;
+    }
+    #f2{
+      border: 3px solid skyblue;
+      border-radius: 20px;
+      padding: 10px;
+    }
+    #f3{
+      border: 3px solid pink;
+      border-radius: 20px;
+      padding: 10px;
     }
     input{
       padding: 5px;
@@ -35,6 +54,9 @@
       border-radius: 50px;
       border: 1px solid #aaa;
       outline: none;
+    }
+    input:focus{
+      background: lightyellow;
     }
     .tt{
       float: left;
@@ -48,10 +70,20 @@
       border: 1px solid gray;
       border-radius: 10px;
     }
+    #text{
+      border-bottom: 5px solid sandybrown;
+    }
+    #text2{
+      border-bottom: 5px solid skyblue;
+    }
+    #text3{
+      border-bottom: 5px solid pink;
+    }
     </style>
   </head>
   <body>
-  <form name="f1" action="index.html" method="post">
+    <p>ランダムで文を作ります。</p>
+  <form id="f1" name="f1" action="index.html" method="post">
     1.<input id="s11" type="text" name="s11" value=""><br>
     2.<input id="s12" type="text" name="s12" value=""><br>
     3.<input id="s13" type="text" name="s13" value=""><br>
@@ -60,7 +92,7 @@
     6.<input id="s16" type="text" name="s16" value=""><br>
   </form>
 
-  <form name="f2" action="index.html" method="post">
+  <form id="f2" name="f2" action="index.html" method="post">
     1.<input id="s21" type="text" name="s21" value=""><br>
     2.<input id="s22" type="text" name="s22" value=""><br>
     3.<input id="s23" type="text" name="s23" value=""><br>
@@ -69,7 +101,7 @@
     6.<input id="s26" type="text" name="s26" value=""><br>
   </form>
 
-  <form name="f3" action="index.html" method="post">
+  <form id="f3" name="f3" action="index.html" method="post">
     1.<input id="s31" type="text" name="s31" value=""><br>
     2.<input id="s32" type="text" name="s32" value=""><br>
     3.<input id="s33" type="text" name="s33" value=""><br>
