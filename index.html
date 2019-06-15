@@ -69,6 +69,15 @@
     6.<input id="s26" type="text" name="s26" value=""><br>
   </form>
 
+  <form name="f3" action="index.html" method="post">
+    1.<input id="s31" type="text" name="s31" value=""><br>
+    2.<input id="s32" type="text" name="s32" value=""><br>
+    3.<input id="s33" type="text" name="s33" value=""><br>
+    4.<input id="s34" type="text" name="s34" value=""><br>
+    5.<input id="s35" type="text" name="s35" value=""><br>
+    6.<input id="s36" type="text" name="s36" value=""><br>
+  </form>
+
     <div id="btn">決定</div>
 
   <div class="textss">
@@ -90,6 +99,23 @@
       </select>
     </div>
     <div class="tt" id="text2">☐☐</div>
+    <div class="tt">
+      <select class="menu1" name="">
+        <option value="が">が</option>
+        <option value="の">の</option>
+        <option value="と">と</option>
+        <option value="に">に</option>
+        <option value="を">を</option>
+        <option value="で">で</option>
+        <option value="し">し</option>
+        <option value="も">も</option>
+        <option value="より">より</option>
+        <option value="だから">だから</option>
+        <option value="だけど">だけど</option>
+        <option value="">(なし)</option>
+      </select>
+    </div>
+    <div class="tt" id="text3">☐☐</div>
   </div>
 
     <script type="text/javascript">
@@ -97,6 +123,7 @@
     const btn = document.getElementById('btn');
     var num1 = Math.floor(Math.random()*6+1);
     var num2 = Math.floor(Math.random()*6+1);
+    var num3 = Math.floor(Math.random()*6+1);
 
       btn.addEventListener('click',function(){
     {//f1
@@ -142,6 +169,28 @@
           s26.innerText = document.forms.f2.s26.value;
         }
       num2 = Math.floor(Math.random()*6+1);
+    }
+    {//f1
+        if (num3 == 1) {
+          const s31 = document.getElementById('text3');
+          s31.innerText = document.forms.f3.s31.value;
+        }else if (num3 == 2) {
+          const s32 = document.getElementById('text3');
+          s32.innerText = document.forms.f3.s32.value;
+        }else if (num3 == 3) {
+          const s33 = document.getElementById('text3');
+          s33.innerText = document.forms.f3.s33.value;
+        }else if (num3 == 4) {
+          const s34 = document.getElementById('text3');
+          s34.innerText = document.forms.f3.s34.value;
+        }else if (num3 == 5) {
+          const s35 = document.getElementById('text3');
+          s35.innerText = document.forms.f3.s35.value;
+        }else if (num3 == 6) {
+          const s36 = document.getElementById('text3');
+          s36.innerText = document.forms.f3.s36.value;
+        }
+      num3 = Math.floor(Math.random()*6+1);
     }
 
       })
